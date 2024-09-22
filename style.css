@@ -1,0 +1,172 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+body {
+ background-color: #B9B9CC;;   
+}
+ .bg {    
+  height:95vh;
+  background-image: url("assets/jail2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+
+/* STYLE TEXT */
+  @font-face {
+font-family: myFirstFont;
+src: url(louisgeorge.ttf);
+}
+  
+ul {
+  font-family:myFirstFont;
+  font-size:70;
+}
+
+@font-face {
+font-family: myTwoFont;
+src: url(HARMONY.otf);
+}
+  @font-face {
+font-family: myThreeFont;
+src: url(Lato-Regular.ttf);
+}
+h1 {
+  color:white;
+  font-weight: thick;
+}
+h2 {
+  color:white;
+  font-family: myThreeFont;
+  font-weight: lighter;
+}
+.thegoal {
+  font-family: myTwoFont;
+  padding-top:240px;
+  padding-left:200px;
+  padding-right:200px;
+}
+
+.colort {
+  color:#002F49;
+}
+
+/* STYLE IMAGES */
+.navbar-brand {
+  float:left;
+}
+.map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width:800px;
+  padding-top:15px;
+  height:auto;
+}
+/* STYLE NAV BAR */
+.navbar {
+  background-color:#002F49;
+  width:100%; 
+  text-align:center;
+}
+
+nav ul { 
+  padding:0px;
+  margin:0px;
+  list-style: none; 
+  position:absolute;
+  background-color:#002F49;
+  text-align:center;
+}
+
+nav ul li { 
+  display:inline-block;
+  width: 200px;
+  line-height:120px;
+  text-align:center;
+  position:relative;
+  text-decoration: none;
+}
+
+nav ul li a { 
+  text-decoration: none;
+  color:white;
+  overflow:auto;
+  display:block;
+  font-size:20px;  
+  position:relative;
+}
+
+nav ul li ul li { 
+  display: none;  
+}
+
+nav ul li:hover ul li {
+  display: block;
+}
+
+
+/* STYLE BUTTONS */
+/* animation  button */
+nav ul li a::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before{
+  transform: scaleX(1);
+}
+/* ADD MORE! */
+
+/* h1 and 2 */
+.greeting h1 {
+  font-size: 100px;
+  text-align: center;
+  margin: 0px; 
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.greeting h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.help {
+  font-family: myTwoFont;
+  color:#002F49;
+  padding-top:240px;
+  padding-left:200px;
+  padding-right:200px;
+}
+.helpTwo {
+  font-family: myTwoFont;
+  font-weight:lighter;
+  color:#002F49;
+  padding-left:200px;
+  padding-right:200px;
+
+/* youtube video */
+.yt {
+  padding: 25px;
+  background-color:#B9B9CC;
+}
+.ytL {
+  padding:200px;
+}
